@@ -53,8 +53,8 @@ else
 {
     if(true)
     {
-            $filename =storage."img/".time().".png";
-            $filename =iconv("gb2312","UTF-8",$filename);
+            $filename =storage."img/".$_FILES["file"]["name"];
+            //$filename =iconv("gb2312","UTF-8",$filename);
             if(file_exists($filename))
             {
 		$etime=microtime(true);
