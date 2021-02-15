@@ -55,12 +55,12 @@
 			exit;
 		};
 		if ($_GET['admin'] != password) {
-		if (mb_strlen($_GET['message'], 'UTF-8')>64){
-		$etime=microtime(true);
-		$totaltime=$etime-$stime;
-		echo "Message is too long.</br>Total time: ".$totaltime."s.";
-			exit;
-		};
+		//if (mb_strlen($_GET['message'], 'UTF-8')>64){
+		//$etime=microtime(true);
+		//$totaltime=$etime-$stime;
+		//echo "Message is too long.</br>Total time: ".$totaltime."s.";
+		//	exit;
+		//};
 		};
 		$get = $_GET['message'];
 		if (empty($_GET['username'])){
