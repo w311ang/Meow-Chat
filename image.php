@@ -51,7 +51,7 @@ if($_FILES["file"]["error"])
 }
 else
 {
-    if(($_FILES["file"]["type"]=="image/png"||$_FILES["file"]["type"]=="image/jpeg"))
+    if(true)
     {
             $filename =storage."img/".time().".png";
             $filename =iconv("gb2312","UTF-8",$filename);
