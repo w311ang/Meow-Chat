@@ -46,7 +46,7 @@ function uploadimage() {
 }
 function checkHtml(htmlStr) {
      var reg = /<[^>]+>/g;
-     return reg.test(htmlStr);
+     return false;
  }
 function checkmsg(){
      var html=document.getElementById('text').value;
@@ -231,7 +231,7 @@ function checkmsg(){
         <div class="send" id="sendmessage">
   <div class="input-group" style="bottom:15px;">
   <span class="input-group-addon" style="-webkit-app-region: drag;">内容</span>
-  <input id="text" type="text" class="form-control" style="height:28px;" maxlength="64"/>
+  <input id="text" type="text" class="form-control" style="height:28px;"/>
   <span class="input-group-btn"><button onclick="sendimgbtn();" class="btn btn-info"/><span class="glyphicon glyphicon-picture"></span></button><button onclick="checkmsg();" class="btn btn-info"/><span class="am-icon-paper-plane-o"></span></button>
   </span>
 </div>
