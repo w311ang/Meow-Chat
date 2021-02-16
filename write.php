@@ -79,6 +79,7 @@
 		} else {
 			file_put_contents(storage.''.chatfile, $ip . "+" . $timehidden . "" . linkchar1 . "[".$time."] [" . $un . "] " .linkchar2 . "" . $get . "\r\n");
 		};
+		command();
 		$etime=microtime(true);
 		$totaltime=$etime-$stime;
 		echo "Success.</br>Total time: ".$totaltime."s.";
@@ -92,4 +93,11 @@
 		echo "Password not match.</br>Total time: ".$totaltime."s.";
 		exit;
 	};
+function command(){
+$get = $_GET['message'];
+  if ($get==="/clear"){
+    //$clear = file_get_contents('/clear.php?password='.password);
+    //file_get_contents('/write.php?password='.password.'&message=<font color=\'5BA783\'>'.$clear.'</font>'.'&username=<font color=\'5BA783\'>系统</font>'.'&password='.password);
+  };
+};
 ?>
