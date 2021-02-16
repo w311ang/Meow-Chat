@@ -55,7 +55,7 @@ else
     {
             $filename =storage."img/".$_FILES["file"]["name"];
             //$filename =iconv("gb2312","UTF-8",$filename);
-            if(file_exists($filename))
+            if(false)
             {
 		$etime=microtime(true);
 		$totaltime=$etime-$stime;
